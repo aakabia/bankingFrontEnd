@@ -45,6 +45,11 @@ dark : is how we will abbreviate our styles for dark mode
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-errorPage: var(--error404-bg-color);
+  --color-errorPageColor: var(--error-color);
+  --font-errorPageFont:var(--error-font);
+
 }
 
 :root {
@@ -80,6 +85,10 @@ dark : is how we will abbreviate our styles for dark mode
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --error404-bg-color: #f0f0f0; 
+  --error-font: "Segoe UI", Tahoma, Verdana, sans-serif; 
+  --error-color: #333;
 }
 
 .dark {

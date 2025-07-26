@@ -1,0 +1,19 @@
+
+services:
+  banking-app:
+    image: banking-app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: final
+      args:
+            - FRONT_END_PORT=${FRONT_END_PORT}
+    environment:
+      NODE_ENV: production
+    ports:
+      - ${FRONT_END_PORT}:${FRONT_END_PORT}
+
+
+
+# Above is a service to opmose up our banking-app
+# the application is run on FRONT_END_PORT env var
