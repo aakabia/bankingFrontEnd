@@ -8,7 +8,6 @@ dark : is how we will abbreviate our styles for dark mode
 :is(.dark *):  This is a CSS pseudo-class selector. It means "select any element that is a descendant of an element with the class dark
 */
 
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -48,8 +47,7 @@ dark : is how we will abbreviate our styles for dark mode
 
   --color-errorPage: var(--error404-bg-color);
   --color-errorPageColor: var(--error-color);
-  --font-errorPageFont:var(--error-font);
-
+  --font-errorPageFont: var(--error-font);
 }
 
 :root {
@@ -86,8 +84,8 @@ dark : is how we will abbreviate our styles for dark mode
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  --error404-bg-color: #f0f0f0; 
-  --error-font: "Segoe UI", Tahoma, Verdana, sans-serif; 
+  --error404-bg-color: #f0f0f0;
+  --error-font: "Segoe UI", Tahoma, Verdana, sans-serif;
   --error-color: #333;
 }
 
@@ -126,13 +124,13 @@ dark : is how we will abbreviate our styles for dark mode
 }
 
 @layer base {
-  * { 
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  body{
+
+  body {
     width: 100%;
     min-height: 100vh;
   }
